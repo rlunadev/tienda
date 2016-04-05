@@ -4,6 +4,7 @@
 <li>User</li>
 <li>Category</li>
 <li>Product</li>
+<li>Rol</li>
 </ul>
 # Laravel PHP Framework
 
