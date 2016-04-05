@@ -6,6 +6,13 @@
 <li>Product</li>
 <li>Rol</li>
 </ul>
+
+#TASK 
+<code>1. Generate Migrations of tables</code>
+<code>2. Make models</code>
+<code>3. Make controllers</code>
+<code>4. Make views and add CRUD for user,category,product,rol</code>
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
