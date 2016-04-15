@@ -28,5 +28,5 @@ class TestController extends Controller
     	//});
     	//dd($article);
     	return view('test.index',['article'=>$article]);
-    }
+    } 
 }

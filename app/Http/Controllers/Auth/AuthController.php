@@ -37,8 +37,11 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        $this->middleware('guest', ['except' => 'getLogout']);
+        //$this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
+    protected $redirectPath='admin/';
+    protected $loginPath='/admin/auth/login';
 
     /**
      * Get a validator for an incoming registration request.
@@ -69,4 +72,9 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+    protected function getLogin() {
+        return view('admin.auth.login');
+    }
+    
+    //protected $redirectPath='home';
 }
