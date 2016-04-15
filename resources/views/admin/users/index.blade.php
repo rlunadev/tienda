@@ -20,8 +20,8 @@
 				<td><span class="label label-primary">{{$user->type}}</span></td>
 			@endif
 			<td>
-				<button class="btn btn-danger">Eliminar</button>
-				<button class="btn btn-warning">Editar</button>
+				<a href="{{ route('admin.users.destroy',$user->id) }}"><button class="btn btn-danger">Eliminar</button></a>
+				<a href="{{ route('admin.users.edit',$user->id)}}"><button class="btn btn-warning">Editar</button></a>
 			</td>
 		</tr>
 		@endforeach

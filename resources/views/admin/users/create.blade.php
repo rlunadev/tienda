@@ -1,7 +1,5 @@
 @extends('admin.template.main')
-
 @section('title','Crea Usuario')
-
 @section('content')
 	{!! Form::open(['route'=>'admin.users.store','method'=>'POST']) !!}
 	<div class="form-group">
@@ -20,7 +18,7 @@
 	</div>
 	<div class="form-group">
 		{!!Form::label('type','Tipo')!!}
-		{!!Form::select('type',['member'=>'Miembro','admin'=>'Administrador'],null,['class'=>'form-control'])!!}
+		{!!Form::select('type',['member'=>'Miembro','admin'=>'Administrador'],null,['class'=>'form-control','placeholder'=>'Seleccione Opcion','required'])!!}
 	</div>
 	<div class="div-group">
 		{!!Form::submit('registrar',['class'=>'btn btn-primary'])!!}
