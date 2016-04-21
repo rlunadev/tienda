@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -159,6 +159,7 @@ return [
         /*
         Provider personal ronald
         */
+        App\Providers\ComposerServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
     ],
@@ -212,6 +213,7 @@ return [
         */
         'Form'=>Collective\Html\FormFacade::class,
         'Html'=>Collective\Html\HtmlFacade::class,
+        
     ],
 
 ];
